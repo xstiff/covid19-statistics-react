@@ -28,7 +28,7 @@ export const CountryForm = () => {
 
 
 
-        if (filteredCountries || summary) {
+        if (filtered) {
             let sortedCountries = [...filtered ] ;
         
             if(sortType) {

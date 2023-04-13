@@ -24,10 +24,10 @@ export const Home = () => {
         window.scrollTo(0, 0);
         setTimeout(() => {
             document.location.reload()
-            }, 3000)
+            }, 4000)
         return <>
                 <h1>Too many requests, please try again later :(</h1>
-                <h1>We will try again within 3 seconds</h1>
+                <h1>We will try again within 4 seconds</h1>
                 </>
     }
     return(
