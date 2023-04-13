@@ -1,9 +1,9 @@
 
 import {useEffect, useState} from 'react';
-import { Button } from '../button/button';
+
 import { Input } from '../input/input';
 import "./form.scss"
-import { toast } from 'react-toastify';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { Spinner } from '../spinner/spinner';
 import { clearFilter, setFiltered } from '../../redux/main/mainSlice';
@@ -11,7 +11,7 @@ import { clearFilter, setFiltered } from '../../redux/main/mainSlice';
 export const CountryForm = () => {
     const [search, setSearch] = useState('');
     const dispatch = useDispatch();
-    const {summary ,sortType,sortDirection, filteredCountries, loading} = useSelector(state => state.main)
+    const {summary ,sortType,sortDirection, loading} = useSelector(state => state.main)
 
     useEffect( () => {
         console.log(search);
@@ -30,7 +30,7 @@ export const CountryForm = () => {
 
         if (filtered) {
             let sortedCountries = [...filtered ] ;
-        
+            
             if(sortType) {
                 sortedCountries.sort((a, b) => {
                     const valueA = typeof a[sortType] === "string" ? a[sortType].toUpperCase() : a[sortType];
@@ -45,7 +45,7 @@ export const CountryForm = () => {
 
             dispatch(setFiltered(sortedCountries));
         }
-        
+        // eslint-disable-next-line
     }, [search])
 
 

@@ -30,8 +30,8 @@ export const AllCountries = () => {
             dispatch(setFiltered(sortedCountries));
         }
         
-        
-    }, [sortType, sortDirection, ])
+        // eslint-disable-next-line
+    }, [sortType, sortDirection ])
 
     if (loading) return <Spinner />
     if (error) {

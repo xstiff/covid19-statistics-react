@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+
 const API_URL = 'https://api.covid19api.com/';
 // + login
 //https://api.covid19api.com/

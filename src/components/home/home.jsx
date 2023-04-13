@@ -3,19 +3,19 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Spinner } from '../spinner/spinner';
 import { requestWorldSummary } from '../../redux/main/mainActions';
-import { CountryForm } from '../form/form';
-import { CountryData } from '../countryData/countryData';
+
 import { WorldData } from '../worldData/worldData';
 import { AllCountries } from '../allCountries/allCountries';
-import { toast } from 'react-toastify';
+
 
 export const Home = () => {
     const dispatch = useDispatch();
     const mainSelector = useSelector(state => state.main);
-    const { loading, error, summary, filteredCountries } = mainSelector;
+    const { loading, error } = mainSelector;
     
     useEffect( () => {
         dispatch(requestWorldSummary());
+        // eslint-disable-next-line
     }, [])
 
     if (loading) return <Spinner />

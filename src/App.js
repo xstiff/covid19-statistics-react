@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, redirect} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 
