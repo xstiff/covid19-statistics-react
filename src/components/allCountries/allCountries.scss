@@ -1,0 +1,48 @@
+
+.all-table {
+    width:100%;
+    margin:0 auto;
+    border-collapse: collapse;
+    
+    
+    .table-headers{
+        width:100%;
+        th {
+            font-weight: 900;
+            text-align: center;
+        }
+        th:nth-child(1) {
+            width:20%;
+        }
+        th:nth-child(2),th:nth-child(3),th:nth-child(4) {
+            width:auto;
+        }
+        th:nth-child(6) {
+            width:10%;
+        }
+
+    }
+    tr:nth-child(even) {
+        background-color: #ffffff;
+      }
+    
+    td {
+        font-size: 18px;
+    }
+    th {
+        font-size: 20px;
+    }
+    .table-row {
+
+        td {
+            text-align: center;
+        }
+
+        .td-id {
+            width: 10%;
+        }
+        .td-el {
+            width:auto;
+        }
+    }
+}

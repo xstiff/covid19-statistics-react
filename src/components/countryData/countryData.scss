@@ -1,0 +1,95 @@
+
+.country-data-container {
+    width:100%;
+    height: auto;
+    margin-top: 25px;
+
+    .date-container {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: column;
+        padding:20px 0;
+        
+        .date {
+            font-size: 30px;
+            padding:0;
+            margin: 0;
+            font-weight:600;
+
+        }
+
+        .subdate {
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+        font-weight: 700;
+
+        }
+    }
+
+    .data-container {
+        width:100%;
+
+        .data {
+            width:100%;
+            
+
+            .data-confirmed {
+                width:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .data-left {
+                    width:50%;
+                    display: flex;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .data-right {
+                    width:50%;
+                    display: flex;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+
+                }
+
+
+                .data-left, .data-right {
+                    padding: 40px 0;
+
+                }
+                .data-title {
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+
+                .data-sub {
+                    color:rgb(243, 83, 83);
+                }
+                p {
+                    font-size: 25px;
+                    font-weight: 800;
+                    margin:0;
+                    padding: 0;
+                }
+
+                svg{ 
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    // #B8D3D1
+}

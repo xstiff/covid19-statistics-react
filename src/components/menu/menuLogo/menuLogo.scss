@@ -1,0 +1,21 @@
+.menu-logo-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    a {
+        text-decoration: none;
+        .menu-logo {
+            font-size: 25px;
+            color:white;
+            transition: all ease-in-out .2s ;
+
+        }
+
+        h1.active {
+            color: yellowgreen;
+        }
+    }
+}
